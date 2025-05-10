@@ -141,7 +141,8 @@ CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only in development mode
 
 # For production, specify the allowed origins
 CORS_ALLOWED_ORIGINS = [
-    "https://your-vercel-app-name.vercel.app",
+    "https://cvchat-git-main-syabahmads-projects.vercel.app/",
+    "https://cvchat-ciea9j1y2-syabahmads-projects.vercel.app/",
     # Add any additional domains where your frontend might be hosted
 ]
 

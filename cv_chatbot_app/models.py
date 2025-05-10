@@ -18,8 +18,6 @@ class CVChunk(models.Model):
     # Store the Qdrant point ID for this chunk
     qdrant_point_id = models.CharField(max_length=255)
     
-    # No need for local embedding storage since they'll be in Qdrant
-    # We're removing the VectorField here
 
     def __str__(self):
         return f"Chunk {self.chunk_index} of CV {self.cv.name}"
