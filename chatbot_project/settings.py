@@ -135,3 +135,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Add these settings if not already present
 CORS_ALLOW_ALL_ORIGINS = True  # For development only
 CORS_ALLOW_CREDENTIALS = True
+
+# For development, you can allow all origins
+CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only in development mode
+
+# For production, specify the allowed origins
+CORS_ALLOWED_ORIGINS = [
+    "https://your-vercel-app-name.vercel.app",
+    # Add any additional domains where your frontend might be hosted
+]
+
+# If you need to support credentials (cookies, authorization headers)
+CORS_ALLOW_CREDENTIALS = True
